@@ -148,6 +148,31 @@ input:hover {
     margin-left: 60px;
   }
 
+  .filter-drop-down{
+    padding: 1.3em;
+    width: 31em;
+    /* position: absolute; */
+    border: 2px solid #ffffff;
+    z-index: 100;
+    border-radius: 0.25em;
+    margin-top: -2.2em;
+    background: #ffffff;
+    color: #212121;
+    text-align: left;
+    box-shadow: 0.06em 0.06em 0.3em #8C8C8C;
+    max-height: 14em;
+    overflow-y: auto;
+    margin-left: 3em;
+}
+
+.filter-list{
+  padding:0.3em 0;
+}
+.filter-list:hover {
+  background-color: #8C8C8C;
+  cursor: pointer;
+}
+
   svg#rocket {
     width: 80px;
     position: absolute;
@@ -307,3 +332,5 @@ input:hover {
       visibility: hidden;
     }
   }
+
+
