@@ -1,0 +1,13 @@
+<div class="card" style="width: 40rem;margin-bottom: 0.5rem;" *ngFor="let searchData of searchResult">
+  <div class="card-body">
+    <h5 class="card-title">{{searchData.companyName}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{searchData.location}}</h6>
+    <a href="#" class="card-link">{{searchData.domain}}</a>
+    <p class="card-text">{{searchData.date}}</p>
+    <a href="#" class="card-link">{{searchData.imageUrl}}</a>
+    <p class="card-text">{{searchData.mimeType}}</p>
+    <p class="card-text">{{searchData.ipAddress}}</p>
+  </div>
+</div>
+
+<app-paginator [totalItems]="totalItems" [pageSize]="pageSize" (pageChanged)="onPageChange($event)"></app-paginator>

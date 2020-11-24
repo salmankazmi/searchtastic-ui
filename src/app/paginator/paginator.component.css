@@ -1,0 +1,13 @@
+.pagetag {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.active {
+  color: black;
+}
+
+.disabled {
+  color: grey;
+  pointer-events: none;
+}

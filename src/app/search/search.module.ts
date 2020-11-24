@@ -6,10 +6,13 @@ import { SearchComponent } from './search.component';
 import { SearchService } from './service/search.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { SearchDetailsComponent } from '../search-details/search-details.component';
+import { PaginatorComponent } from '../paginator/paginator.component';
 @NgModule({
     declarations: [
-        SearchComponent
+        SearchComponent,
+        SearchDetailsComponent,
+        PaginatorComponent
     ],
     imports: [
         BrowserModule,
@@ -19,7 +22,9 @@ import { FormsModule } from '@angular/forms';
         HttpClientModule
     ],
     exports: [
-        SearchComponent
+        SearchComponent,
+        SearchDetailsComponent,
+        PaginatorComponent
     ],
     providers: [
         SearchService
