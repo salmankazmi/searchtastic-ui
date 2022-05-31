@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ce890369-1aea-4e9d-9b1a-8e42ee3a8317/deploy-status)](https://app.netlify.com/sites/peppy-malasada-9b479b/deploys)
+
 # SearchtasticUi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
