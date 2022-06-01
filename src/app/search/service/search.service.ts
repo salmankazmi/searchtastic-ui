@@ -2,8 +2,10 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const FILTER_LIST_URL = 'http://localhost:8080/complete/searchNames';
-const FILTER_DETAILS_URL = 'http://localhost:8080/complete/search';
+const api = `${environment.apiUrl}`;
+
+const FILTER_LIST_URL = api + '/complete/searchNames';
+const FILTER_DETAILS_URL = api + '/complete/search';
 
 @Injectable()
 export class SearchService {
