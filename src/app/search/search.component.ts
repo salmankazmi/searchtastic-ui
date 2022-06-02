@@ -16,10 +16,12 @@ export class SearchComponent {
   constructor(private searchService: SearchService) { }
 
   fetchData(searchText: string): void {
-    this.searchService.getFilterList(searchText).subscribe(response => {
-      this.filterDropDownList = response && response.length > 0 ? true : false;
-      this.searchFilterData = response;
-    });
+    if(searchText) {
+      this.searchService.getFilterList(searchText).subscribe(response => {
+        this.filterDropDownList = response && response.length > 0 ? true : false;
+        this.searchFilterData = response;
+      });
+    }
   }
 
   selectFilter(selectedName: string): void {
